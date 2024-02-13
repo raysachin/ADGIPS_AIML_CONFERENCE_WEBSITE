@@ -31,6 +31,31 @@
   <link href="css/style.css" rel="stylesheet">
 
 </head>
+<style>
+  /* Styles for the announcement bar */
+  .announcement-bar {
+    background-color: rgb(44, 64, 198); /* Yellow color, you can change it to your preference */
+    color: white; /* Text color, you can change it to your preference */
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  /* Styles for the marquee effect */
+  .marquee {
+    animation: marquee 30s linear infinite; /* Adjust the duration (20s) for slower speed */
+  }
+
+  /* Keyframes for the marquee animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
 
 <body>
 
@@ -97,12 +122,19 @@
   <section id="intro">
 
     <div class="intro-container wow fadeIn">
+      <!-- <p class="mb-14 pb-4">
+        <blink> ICIC-2024 has been postponed. New Dates will be announced soon </blink>
+      </p> -->
+      <div class="announcement-bar">
+        <div class="marquee">
+          <!-- Text that will be scrolling -->
+          <span>Selected papers will be published in  &nbsp; 1. Sigmal journal of engineering and Natural science ( Web of science index )  &nbsp; 2. Journal of Thermal engineering ( Web of science index )  &nbsp; 3. Other Collaboration for journal in progress </span>
+        </div>
+      </div>
+      <br>
+      <h1 class="mb-0 pb-0">International Conference <span>on Advances</span> in AI </h1>
       <p class="mb-14 pb-4">
-        <blink> ICIC-2023 has been postponed. New Dates will be announced soon </blink>
-      </p>
-      <h1 class="mb-0 pb-0">International Conference<br><span>on Innovations</span> in AI SOLUTION</h1>
-      <p class="mb-14 pb-4">
-      <h3><b>(ICIC-2024)<br> June 25-26, 2024 <br>New Delhi, India</h3></b>
+      <h3><b>(ICA2I-2024)<br> June 25-26, 2024</h3></b>
       </p>
       <h7>Organised by</h7>
       <p class="niche mb-16 pb-0">
@@ -114,7 +146,6 @@
       <a href="https://easychair.org/conferences/?conf=icic20230" class="pt-20 about-btn scrollto">Submit Paper</a>
     </div>
   </section>
-
   <main id="main">
 
     <!--==========================
@@ -139,10 +170,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>About The Conference</h2>
-            <p>ICIC 2023 is a stage for researchers and scholars to share their contributions towards the developments
-              in various emerging fields in computing science and technology. The theme of the conference is to bring
-              together specialists and experts from the industries, research institutes, government agencies and
-              academics to provide a detailed understanding of various trends and advances in computer science. </p>
+            <p>ICA2I 2024 is the premier International Conference on Advances in Artificial Intelligence, uniting leading researchers, scholars, and industry professionals to explore the latest breakthroughs, trends, and real-world applications in AI. Join us for insightful discussions, networking opportunities, and invaluable insights into the rapidly evolving landscape of artificial intelligence. Together, we'll delve into cutting-edge research and shape the future of AI technology across diverse sectors. </p>
           </div>
           <div class="col-lg-3">
             <h3>Venue</h3>
@@ -151,7 +179,7 @@
           </div>
           <div class="col-lg-3">
             <h3>Date</h3>
-            <p>Friday to Saturday<br>March 24-25, 2023</p>
+            <p>Tuesday to Wednesday<br>June 25-26, 2024</p>
           </div>
         </div>
       </div>
@@ -165,6 +193,7 @@
 
         <div class="section-header">
           <p> </p>
+          <br>
           <h2>Tracks For Authors</h2>
           <p>Authors are invited to submit their latest original and published research work/results in the following
             areas, but not limited to: </p>
@@ -176,13 +205,13 @@
               <div class="card-body h-100">
                 <h5 class="card-title text-muted text-uppercase text-center"></h5>
                 <h6 class="card-price text-center">Track 1</h6>
-                <p align="center"><b>Robotics </b></p>
+                <p align="center"><b>ML & Robotics </b></p>
                 <hr>
                 <ul class="fa-ul">
 
 
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Human-Robot Collaboration</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Robotic Perception and Sensing</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Robotic Perception and <BR>Sensing</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Autonomous Navigation</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Soft Robotics</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Robotic Swarm Intelligence</li>
@@ -190,7 +219,12 @@
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Robots in Healthcare</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Agricultural Robotics</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Robotics in Space Exploration </li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Robot Learning and Adaptation </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Explainable AI in Robotics </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Human-Centered Robotics Design </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Multi-Robot Collaboration </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Ethical and Social Implications of Robotics </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Reinforcement Learning for Robotics </li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Swarm Robotics Applications </li>
                 </ul>
                 <hr>
               </div>
@@ -201,22 +235,19 @@
               <div class="card-body h-100">
                 <h5 class="card-title text-muted text-uppercase text-center"></h5>
                 <h6 class="card-price text-center">Track 2</h6>
-                <p align="center"><b>Healthcare </b></p>
+                <p align="center"><b>Cognitive </b></p>
                 <hr>
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Healthcare Digital Transformation</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Telehealth and Remote Patient Monitoring
-                  </li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Healthcare Data Security and Privacy</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Value-Based Care Models</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Patient Engagement and Experience</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Healthcare Artificial Intelligence
-                    Applications</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Precision Medicine and Genomic Health</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Healthcare Sustainability and Green
-                    Practices</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Health Equity and Access to Care</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Mental Health and Well-being Initiatives
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Computing and Artificial Intelligence</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Psychology and Human-Computer Interaction</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Neuroscience and Brain-Computer Interfaces</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Embodied Cognition</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Learning and Education Technology</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Linguistics and Natural Language Processing</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Models of Decision Making and Problem Solving</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Rehabilitation and Assistive Technology</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Computing in Healthcare</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Cognitive Computing and Ethical Considerations
                   </li>
                 </ul>
                 <hr>
@@ -228,7 +259,7 @@
               <div class="card-body h-100">
                 <h5 class="card-title text-muted text-uppercase text-center"></h5>
                 <h6 class="card-price text-center">Track 3</h6>
-                <p align="center"><b> Forensic</b></p>
+                <p align="center"><b> Digital Forensic</b></p>
                 <hr>
                 <ul class="fa-ul">
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic DNA Analysis
@@ -242,8 +273,13 @@
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Odontology</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Psychology</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Accounting</li>
-
-
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Toxicology</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Digital Forensic Investigation</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Nursing</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Video Analysis</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Document Examination</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Digital Evidence Analysis</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Forensic Chemistry</li>
                 </ul>
                 <hr>
               </div>
@@ -259,7 +295,7 @@
                 <ul class="fa-ul">
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Sustainable Energy and Renewable Resources</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Sustainable Agriculture and Food Security</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Sustainable Urban Planning and Smart Cities</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Sustainable Urban Planning</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Sustainable Water Management and Conservation</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Biodiversity and Ecosystem Preservation</li>
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Sustainable Transportation and Mobility</li>
