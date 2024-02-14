@@ -124,7 +124,7 @@ h4 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  background: #3d92cd;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -344,7 +344,7 @@ section-header1 {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #f82249;
+  background-color: #3d92cd;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
